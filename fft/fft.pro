@@ -24,6 +24,14 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 # OpenCV
-INCLUDEPATH += "/Users/surya/Downloads/opencv-4.6.0/build/install/include/opencv4"
-LIBS += -L"/Users/surya/Downloads/opencv-4.6.0/build/install/lib" \
-        -l"opencv_world"
+INCLUDEPATH += "E:\Image_Processing\OpenCV-MinGW-Build-OpenCV-4.5.2-x64\include"
+
+LIBS += "E:\Image Processing\OpenCV-MinGW-Build-OpenCV-4.5.2-x64\x64\mingw\bin\libopencv_core452.dll"
+LIBS += "E:\Image Processing\OpenCV-MinGW-Build-OpenCV-4.5.2-x64\x64\mingw\bin\libopencv_highgui452.dll"
+LIBS += "E:\Image Processing\OpenCV-MinGW-Build-OpenCV-4.5.2-x64\x64\mingw\bin\libopencv_imgcodecs452.dll"
+LIBS += "E:\Image Processing\OpenCV-MinGW-Build-OpenCV-4.5.2-x64\x64\mingw\bin\libopencv_imgproc452.dll"
+LIBS += "E:\Image Processing\OpenCV-MinGW-Build-OpenCV-4.5.2-x64\x64\mingw\bin\libopencv_features2d452.dll"
+LIBS += "E:\Image Processing\OpenCV-MinGW-Build-OpenCV-4.5.2-x64\x64\mingw\bin\libopencv_calib3d452.dll"
+LIBS += "E:\Image Processing\OpenCV-MinGW-Build-OpenCV-4.5.2-x64\x64\mingw\bin\libopencv_video452.dll"
+LIBS += "E:\Image Processing\OpenCV-MinGW-Build-OpenCV-4.5.2-x64\x64\mingw\bin\libopencv_videoio452.dll"
+
